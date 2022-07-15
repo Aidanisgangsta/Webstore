@@ -1,15 +1,175 @@
 body {
-    display: flex;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
     margin: 0;
+    background-color: #d4d4d4;
   }
 
 .logo {
     height: 4em;
 }
 
-.navbar {
+/* Elements in the navbar*/
+
+.nav {
     display: flex;
+    overflow: auto;
+    flex-flow: column nowrap;
+}
+
+.nav-top, .nav-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* Elements in the top part of the navbar*/
+
+.nav-top {    
+    background-color: #0f4f34;
+    height: 4em;
+}
+
+.nav-top-left, .nav-top-middle, .nav-top-right {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.nav-top-left {
+    padding-left: 1.5em;
+    padding-right: 5em;
+}
+
+.nav-top-middle {
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-top-right {
+    padding-right: 1.5em;
+    padding-left: 5em;
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+}
+
+.search-field {
+    flex-grow: 1;
+}
+
+.search-box, .department-dropdown, .search-button {
+    padding: 0;
+    border: 0;
+    height: 3em;
+    float: left;
+    width: 100%
+}
+
+.search-button {
+    background-color: white;
+    border-radius: 0 0.5em 0.5em 0;
+}
+
+.search-box {
+    border-radius: 0.5em 0 0 0.5em;
+}
+
+.search-button-image {
+    height: 2.5em;
+    padding: 0.25em;
+}
+
+.logo {
+    height: 2.5em;
+}
+
+/* Rounded toggle checkbox*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 22px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(190, 200, 255);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2a19c0;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2a19c0;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 20px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Elements in the bottom part of the navbar*/
+
+.nav-bottom {
+    background-color: #067a52;
+    height: 2em;
+}
+
+.nav-bottom-left, .nav-bottom-right {
+    display: flex;
+    gap: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.nav-bottom-left {
+    flex-grow: 1;
+}
+
+.bottom-container {
+    height: 2em;
 }

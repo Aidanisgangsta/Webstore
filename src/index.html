@@ -10,73 +10,69 @@
     <title>Webstore</title>
 </head>
 <body>
-    <div class="navbar">
+    <div class="nav">
         <div class="nav-top">
-            <div class="container">
-                <div class="nav-top-left">
-                    <div class="nav-logo">
-                        <img src="assets/amazon.jpg" alt="logo" class="logo">
+            <div class="nav-top-left">
+                <div class="nav-logo">
+                    <img src="assets/amazon.png" alt="logo" class="logo">
+                </div>
+            </div>
+            <div class="nav-top-middle">
+                <form action="search" method="get" class="search-bar">
+                    <div class="search-field">
+                        <input type="text" class="search-box" value placeholder="   Search" autocomplete="off">
+                    </div>
+                    <div class="search-dropdown">
+                        <select name="department-dropdown" class="department-dropdown">
+                            <option value="All Departments">in <b>All Departments</b></option>
+                            <option value="eco-friendly">Eco Friendly</option>
+                            <option value="second-hand">Second Hand</option>
+                        </select>
                     </div>                
-                    <select name="department-dropdown" class="department-dropdown">
-                        <option value="All Departments">All Departments</option>
-                        <option value="eco-friendly">Eco Friendly</option>
-                        <option value="second-hand">Second Hand</option>
-                    </select>
+                    <div class="search-submit">
+                        <button type="submit" class="search-button">
+                            <img src="assets/magnifying-glass.jpg" alt="search" class="search-button-image">
+                        </button>
+                    </div> 
+                </form>
+            </div>
+            <div class="nav-top-right">
+                <label class="switch">
+                    <input id="toggler" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <div class="nav-account">
+                    Account
                 </div>
-                <div class="nav-top-middle">
-                    <div class="search-bar">
-                        <form action="search" method="get">
-                            <div class="search-field">
-                                <input type="text" id="search-box">
-                            </div>
-                            <div class="search-submit">
-                                <button type="submit">
-                                    <img src="assets/magnifying-glass.jpg" alt="search">
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                <div class="nav-wishlist">
+                    Wishlist
                 </div>
-                <div class="nav-top-right">
-                    <label class="switch">
-                        <input id="toggler" type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                    <div class="nav-account">
-
-                    </div>
-                    <div class="nav-wishlist">
-
-                    </div>
-                    <div class="nav-cart">
-
-                    </div>
+                <div class="nav-cart">
+                    Cart
                 </div>
             </div>
         </div>
         <div class="nav-bottom">
-            <div class="container">
-                <div class="nav-bottom-left">
-                    <div class="departments">
-    
-                    </div>
-                    <div class="new-listings">
-    
-                    </div>
-                    <div class="on-sales">
-
-                    </div>
-                    <div class="sell">
-    
-                    </div>
+            <div class="nav-bottom-left">
+                <div class="departments">
+                    Departments
                 </div>
-                <div class="nav-bottom-right">
-                    <div class="returns">
-
-                    </div>
-                    <div class="customer-service">
-    
-                    </div>
+                <div class="new-listings">
+                    New Listings
+                </div>
+                <div class="on-sales">
+                    Items For Sale
+                </div>
+                <div class="sell">
+                    Sell
+                </div>
+            </div>
+            <div class="nav-bottom-right">
+                <div class="returns">
+                    Returns
+                </div>
+                <div class="customer-service">
+                    Customer Service
                 </div>
             </div>
         </div>
