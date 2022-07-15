@@ -35,7 +35,7 @@ body {
 .nav-top-left, .nav-top-middle, .nav-top-right {
     display: flex;
     align-items: center;
-    gap: 2em;
+    gap: 2.5em;
 }
 
 .nav-top-left {
@@ -52,6 +52,25 @@ body {
 .nav-top-right {
     padding-right: 1.5em;
     padding-left: 5em;
+}
+
+.nav-top-right div {
+    position: relative;
+}
+
+.nav-top-right div::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.5s;
+}
+
+.nav-top-right div:hover::before {
+    width: 100%;
 }
 
 .search-bar {
@@ -159,11 +178,22 @@ input:checked + .slider:before {
     height: 2em;
 }
 
-.nav-bottom-left, .nav-bottom-right {
+.nav-bottom div div {
+    height: 2em;
     display: flex;
-    gap: 1.5em;
+    align-items: center;
+    transition: 0.2s ease-in-out;
     padding-left: 1.5em;
     padding-right: 1.5em;
+}
+
+.nav-bottom div div:hover {
+    background: #046645;    
+    transition: 0.2s ease-in-out;
+}
+
+.nav-bottom-left, .nav-bottom-right {
+    display: flex;
 }
 
 .nav-bottom-left {
