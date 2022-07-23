@@ -27,6 +27,10 @@ body {
 
 /* Elements in the top part of the navbar*/
 
+*:focus {
+    outline: none;
+}
+
 .nav-top {    
     background-color: #0f4f34;
     height: 4em;
@@ -80,6 +84,8 @@ body {
 
 .search-field {
     flex-grow: 1;
+    border-radius: 0.5em 0 0 0.5em;
+    background-color: white;
 }
 
 .search-box, .department-dropdown, .search-button {
@@ -87,7 +93,19 @@ body {
     border: 0;
     height: 3em;
     float: left;
-    width: 100%
+    width: 100%;
+    color: #6d6d6d;
+    font-size: 14px;
+}
+
+.department-dropdown {
+    font-weight: bold;
+}
+
+.search-box {
+    padding-left: 1em;
+    width: calc(100% - 2em);
+    border-radius: 0.5em 0 0 0.5em;
 }
 
 .search-button {
@@ -95,13 +113,24 @@ body {
     border-radius: 0 0.5em 0.5em 0;
 }
 
-.search-box {
-    border-radius: 0.5em 0 0 0.5em;
-}
-
 .search-button-image {
     height: 2.5em;
     padding: 0.25em;
+}
+
+.search-dropdown {
+    height: 3em;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: #777777;
+    font-family: arial;
+    font-size: 14px;
+}
+
+.search-dropdown span {
+    line-height: 3em;
+    vertical-align: middle;
 }
 
 .logo {
