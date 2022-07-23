@@ -1,0 +1,56 @@
+.login-block {
+    margin-left: 33%;
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    font-family: arial;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    color: rgb(29, 29, 29);
+}
+
+.login-email, .login-password, .login-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#email, #password, .login-btn {
+    height: 2.8em;
+    border-radius: 0.3em;
+}
+
+#email, #password {
+    border: 1px solid rgb(100, 100, 100);
+    font-size: 16px;
+    padding-left: 0.7em;
+}
+
+.login-btn {
+    background-color: #067a52;
+    border: 1px solid #0f4f34;
+    border-radius: 0.3em;
+    color: white;
+    outline: none;
+    transition: 0.2s ease-in-out;
+    font-size: 16px;
+}
+
+.login-btn:hover {
+    background: #046645;    
+    transition: 0.2s ease-in-out;
+}
+
+.remember-login {
+    padding-bottom: 2em;
+}

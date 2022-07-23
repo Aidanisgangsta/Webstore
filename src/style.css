@@ -4,6 +4,8 @@ body {
     overflow: hidden;
     margin: 0;
     background-color: #d4d4d4;
+    font-family: "Times New Roman";
+    font-size: 16px;
   }
 
 .logo {
@@ -56,6 +58,7 @@ body {
 .nav-top-right {
     padding-right: 1.5em;
     padding-left: 5em;
+    height: 100%;
 }
 
 .nav-top-right div {
@@ -200,6 +203,35 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
+/* Account dropdown button */
+.account-btn {
+    border: none;
+    background-color: #0f4f34;
+    color: white;
+    font-family: "Times New Roman";
+    font-size: 16px;
+    height: 100%;
+}
+
+.nav-account {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-account-content {
+    display: none;
+    position: absolute;
+    background-color: #383838;
+    z-index: 1;
+}
+
+.nav-account-content a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0.2em 0.2em;
+}
+
 /* Elements in the bottom part of the navbar*/
 
 .nav-bottom {
@@ -231,4 +263,10 @@ input:checked + .slider:before {
 
 .bottom-container {
     height: 2em;
+}
+
+/* Content of webpage */
+.content {
+    height: 100%;
+    z-index: 0;
 }
